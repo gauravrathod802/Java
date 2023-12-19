@@ -1,0 +1,11 @@
+Recursion:
+The function which calls itself is called as Recursion.
+
+There are two types of recursion:
+1)Linear recursion
+ex: fibonacci series
+f(n)=f(n-1)+f(n-2);
+
+2)Divide and conquer
+ex: binary search
+f(n)=f(n/2)+o(1);

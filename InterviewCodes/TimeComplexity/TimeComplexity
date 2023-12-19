@@ -1,0 +1,80 @@
+Time complexity:
+----------------
+
+1)Time complexity means a way to estimate how an algorithm's execution time will grow as the input size increases.
+2)Function that gives the relationship about how the time will grow as the input size grows.
+
+Here is a table showing some common time complexity classes and their growth rates:
+
+| Time complexity class | Growth rate |
+---------------------------------------
+| O(1)                  | Constant    |
+| O(log n)              | Logarithmic |
+| O(n)                  | Linear      |
+| O(n^2)                | Quadratic   |
+| O(n^3)                | Cubic       |
+| O(2^n)                | Exponential |
+______________________________________________________________________________________________________________________________________
+
+ex:
+1.
+Imagine you are looking for a book in a library. The time it takes to find the book will depend on how the library is organized.
+If the books are organized alphabetically, it will be relatively easy to find the book. But if the books are organized randomly,
+it will be more difficult and time-consuming to find the book.
+2.
+For example, imagine you have an algorithm to sort a list of numbers. The time it takes to sort the list will depend on the number
+of numbers in the list. If there are only a few numbers, the algorithm will run quickly. But if there are many numbers,
+the algorithm will take longer to run.
+3.
+Imagine you are cooking a meal. The time it takes to cook the meal will depend on the number of ingredients you need to prepare,
+the number of steps you need to follow, and the complexity of each step.
+Time complexity is similar. It is a measure of how long an algorithm takes to run, as a function of the size of the input.
+The size of the input is like the number of ingredients in your meal. The algorithm is like the cooking recipe.
+
+______________________________________________________________________________________________________________________________________
+
+O(n log n) is not universally better than O(n). The choice between these time complexities
+depends on the specific requirements of the problem and the input size you are dealing with.
+
+O(n log n) algorithms are typically more efficient than O(n) algorithms for large inputs. However, they can be more complex to
+implement and may have higher overhead costs. O(n) algorithms are typically simpler to implement and have lower overhead costs,
+but they may be less efficient for large inputs.
+
+For example, a binary search algorithm has a time complexity of O(log n). This means that it can find an element in a sorted array
+in logarithmic time. A linear search algorithm has a time complexity of O(n). This means that it may have to search through the entire
+array to find the element.
+
+If you are dealing with a small array, then a linear search algorithm will be just as efficient as a binary search algorithm.
+However, if you are dealing with a large array, then a binary search algorithm will be much more efficient.
+
+Another factor to consider is the specific requirements of the problem. For example, if you need to sort an array in the fastest
+possible time, then you will want to use an O(n log n) sorting algorithm. However, if you need to sort an array in a stable way,
+then you may need to use an O(n) sorting algorithm.
+
+Ultimately, the best way to choose between an O(n log n) algorithm and an O(n) algorithm is to consider the specific requirements of
+the problem and the input size you are dealing with.
+
+______________________________________________________________________________________________________________________________________
+
+Here is a table summarizing the key differences between O(n log n) and O(n) algorithms:
+
+Characteristic	    O(n log n)	                            O(n)
+Time complexity	    Logarithmic	                            Linear
+Efficiency	        More efficient for large inputs	        Less efficient for large inputs
+Complexity	        More complex to implement	            Simpler to implement
+Overhead costs	    Higher overhead costs	                Lower overhead costs
+______________________________________________________________________________________________________________________________________
+
+How to actually solve to get the time complexity?
+-------------------------------------------------
+1)Plug and cheg
+f(n)=f(n/2)+c
+
+2)Masters theorem
+3)Akra Bazzi formula
+
+
+
+
+
+
