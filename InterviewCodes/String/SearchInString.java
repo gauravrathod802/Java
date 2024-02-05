@@ -3,7 +3,7 @@ package InterviewCodes.String;
 public class SearchInString {
     public static void main(String[] args) {
         String name="gaurav";
-        char c='z';
+        char c='a';
         System.out.println(search(name,c));
     }
     static boolean search(String name,char target){

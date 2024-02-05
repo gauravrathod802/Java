@@ -11,6 +11,10 @@ public class ArrayMax {
         System.out.println(maxRange(arr,0,2));
     }
     static int max(int arr[]){
+//        edge cases
+        if(arr.length==0){
+            return -1;
+        }
         int maxValue=arr[0];
         for (int i = 1; i < arr.length; i++) {
             if(arr[i]>maxValue){
@@ -29,6 +33,13 @@ public class ArrayMax {
         return minValue;
     }
     static int maxRange(int arr[],int start, int end){
+//        below are two edge cases
+        if(end>start){
+            return -1;
+        }
+        if(arr==null){
+            return -1;
+        }
         int maxValue=arr[start];
         for (int i=start;i<=end;i++){
             if(arr[i]>maxValue){
