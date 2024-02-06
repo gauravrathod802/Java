@@ -12,10 +12,6 @@ public class SearchIn2DArray {
         int target=500;
         int []ans=searchIn2DArray(arr,target);
         System.out.println(Arrays.toString(ans));
-        int a=123456;
-        String s=Integer.toString(a);
-        System.out.println(s.length());
-
     }
     static int[] searchIn2DArray(int[][] arr,int target){
         for (int i = 0; i < arr.length; i++) {
@@ -28,9 +24,9 @@ public class SearchIn2DArray {
         return new int[]{-1,-1};
     }
 
+
+
     public static class CheckSubset {
-
-
         static boolean checkSubset(int a1[], int a2[], int m, int n) {
             int i=0;
             int j=0;
@@ -39,10 +35,8 @@ public class SearchIn2DArray {
                 for (j = 0; j < m; j++)
                     if (a2[i] == a1[j])
                         break;
-
                 if (j == m)
                     return false;
-
             }
             return true;
         }
@@ -56,9 +50,6 @@ public class SearchIn2DArray {
                 System.out.println("yes");
              else
                 System.out.println("no");
-
-
         }
-
     }
 }
